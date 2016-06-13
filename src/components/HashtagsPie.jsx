@@ -1,9 +1,10 @@
+import Mozaik from 'mozaik/browser';
 var React            = require('react');
 var Reflux           = require('reflux');
 var moment           = require('moment');
 var _                = require('lodash');
-var ApiConsumerMixin = require('mozaik/browser').Mixin.ApiConsumer;
-var Pie              = require('mozaik/browser').Component.Pie;
+var ApiConsumerMixin = Mozaik.Mixin.ApiConsumer;
+var Pie              = Mozaik.Component.Pie;
 var HashtagsLegends  = require('./hashtags-pie/HashtagsLegends.jsx');
 
 var HashtagsPie = React.createClass({

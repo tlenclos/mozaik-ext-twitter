@@ -8,7 +8,6 @@ var config  = require('./config');
  * @param {Mozaik} mozaik
  */
 var client = function (mozaik) {
-
     mozaik.loadApiConfig(config);
 
     var twitter = new Twitter({
@@ -32,11 +31,12 @@ var client = function (mozaik) {
     }
 
     return  {
-        userTimeline() {
+        userTimeline: function() {
+            console.log('userTimeline');
             return _get('statuses/user_timeline');
         },
 
-        searchByHashtags(params) {
+        searchByHashtags: function(params) {
             var hashtagsText     = [];
             var hashtagsNormText = [];
 

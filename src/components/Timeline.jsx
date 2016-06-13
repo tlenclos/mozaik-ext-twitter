@@ -1,7 +1,10 @@
+import Mozaik from 'mozaik/browser';
 var React            = require('react');
 var Reflux           = require('reflux');
 var ListTweet        = require('./ListTweet.jsx');
-var ApiConsumerMixin = require('mozaik/browser').Mixin.ApiConsumer;
+var ApiConsumerMixin = Mozaik.Mixin.ApiConsumer;
+
+console.log(ApiConsumerMixin);
 
 var Timeline = React.createClass({
     mixins: [

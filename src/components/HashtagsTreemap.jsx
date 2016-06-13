@@ -1,10 +1,10 @@
+import Mozaik from 'mozaik/browser';
 var React            = require('react');
 var Reflux           = require('reflux');
 var moment           = require('moment');
 var _                = require('lodash');
-var ApiConsumerMixin = require('mozaik/browser').Mixin.ApiConsumer;
-var Treemap          = require('mozaik/browser').Component.Treemap;
-
+var ApiConsumerMixin = Mozaik.Mixin.ApiConsumer;
+var Treemap          = Mozaik.Component.Treemap;
 
 var HashtagsPie = React.createClass({
     mixins: [
